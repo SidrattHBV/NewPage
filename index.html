@@ -1,51 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Начало практики</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Транспортная компания</title>
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
+
   <body>
-    <h1>Начало практики</h1>
-    <nav>
-      <a href="/">Главная</a>
-      <a href="/services">Услуги</a>
-      <a href="/">Контакты</a>
-      <a href="/">О нас</a>
-    </nav>
-    <p>Список</p>
-    <ul>
-      <li>Вариан 1</li>
-      <li>Вариан 2</li>
-      <li>Вариан 3</li>
-    </ul>
-    <form action="" method="post">
-      <label for="name">Имя:</label>
-      <input id="name" type="text" name="username" />
+    <div class="wrapper">
+      <header class="container">
+        <span class="logo">KARGO-98</span>
+        <nav>
+          <ul>
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li class="btn"><a href="#">О нас</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <label for="pass">Пароль:</label>
-      <input id="pass" type="password" name="password" />
+      <div class="hero container">
+        <div class="hero--info">
+          <h2>Транспортная компания</h2>
+          <h1>Карго-98</h1>
+          <p>
+            Возим товары с Китая вот уже 11 лет. Через нас выгодно менять
+            валюту. Офис находиться в вашем городе
+          </p>
 
-      <button type="submit">Готово</button>
-    </form>
+          <div class="contact-btn">
+            <a href="tel:+79332009898">
+              <button class="btn">Позвонить нам</button>
+            </a>
+            <a href="https://wa.me/79332009898">
+              <button class="btn btn-w">Написать в WhatsApp</button>
+            </a>
+          </div>
+        </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Имя</th>
-          <th>Город</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Анна</td>
-          <td>Саратов</td>
-        </tr>
-        <tr>
-          <td>Олег</td>
-          <td>Челябинск</td>
-        </tr>
-      </tbody>
-    </table>
+        <img src="img/image.png" alt="" />
+      </div>
+    </div>
+
+    <section class="container my-table">
+      <table class="table-one">
+        <thead>
+          <tr>
+            <th>Вес</th>
+            <th>Стоимость за 1 кг</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Более 300</td>
+            <td>1,90</td>
+          </tr>
+          <tr>
+            <td>250 - 300</td>
+            <td>2,00</td>
+          </tr>
+          <tr>
+            <td>200 - 250</td>
+            <td>2,10</td>
+          </tr>
+          <tr>
+            <td>190 - 200</td>
+            <td>2,20</td>
+          </tr>
+          <tr>
+            <td>180 - 190</td>
+            <td>2,30</td>
+          </tr>
+          <tr>
+            <td>170 - 180</td>
+            <td>2,40</td>
+          </tr>
+          <tr>
+            <td>160 - 170</td>
+            <td>2,50</td>
+          </tr>
+          <tr>
+            <td>150 - 160</td>
+            <td>2,60</td>
+          </tr>
+          <tr>
+            <td>140 - 150</td>
+            <td>2,70</td>
+          </tr>
+          <tr>
+            <td>130 - 140</td>
+            <td>2,80</td>
+          </tr>
+          <tr>
+            <td>120 - 130</td>
+            <td>3,00</td>
+          </tr>
+          <tr>
+            <td>100 - 120</td>
+            <td>3,20</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table-two">
+        <thead>
+          <tr>
+            <th>Вес</th>
+            <th>Стоимость за 1 к</th>
+            <th>Оплата</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>
