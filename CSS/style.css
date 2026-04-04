@@ -163,6 +163,7 @@ header nav ul li.btn a:hover {
   gap: 40px;
   flex-wrap: wrap;
   padding: 50px;
+  width: 45%;
 }
 
 .table-one {
@@ -176,9 +177,9 @@ header nav ul li.btn a:hover {
   display: inline-table;
   margin: 0 auto;
   border-collapse: collapse;
-  height: auto;
   overflow-y: auto;
   overflow: hidden;
+  max-height: 60px;
 }
 
 th {
@@ -191,7 +192,11 @@ td {
   padding: 10px 20px;
 }
 
-.table-two th {
+.table-two th{
+  border: none;
+}
+
+.table-two td{
   border: none;
 }
 
