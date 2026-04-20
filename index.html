@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div>
       <header class="container">
         <span class="logo">KARGO-98</span>
         <nav>
@@ -43,86 +43,146 @@
       </div>
     </div>
 
-    <section class="container my-table">
-      <table class="table-one">
-        <thead>
-          <tr>
-            <th>Вес</th>
-            <th>Стоимость за 1 кг</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Более 300</td>
-            <td>1,90</td>
-          </tr>
-          <tr>
-            <td>250 - 300</td>
-            <td>2,00</td>
-          </tr>
-          <tr>
-            <td>200 - 250</td>
-            <td>2,10</td>
-          </tr>
-          <tr>
-            <td>190 - 200</td>
-            <td>2,20</td>
-          </tr>
-          <tr>
-            <td>180 - 190</td>
-            <td>2,30</td>
-          </tr>
-          <tr>
-            <td>170 - 180</td>
-            <td>2,40</td>
-          </tr>
-          <tr>
-            <td>160 - 170</td>
-            <td>2,50</td>
-          </tr>
-          <tr>
-            <td>150 - 160</td>
-            <td>2,60</td>
-          </tr>
-          <tr>
-            <td>140 - 150</td>
-            <td>2,70</td>
-          </tr>
-          <tr>
-            <td>130 - 140</td>
-            <td>2,80</td>
-          </tr>
-          <tr>
-            <td>120 - 130</td>
-            <td>3,00</td>
-          </tr>
-          <tr>
-            <td>100 - 120</td>
-            <td>3,20</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="container table">
+      <h2>Калькулятор грузов</h2>
 
-      <table class="table-two">
-        <thead>
-          <tr>
-            <th>Вес</th>
-            <th></th>
-            <th>Стоимость за 1 к</th>
-            <th></th>
-            <th>Оплата</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>120</td>
-            <td>*</td>
-            <td>3</td>
-            <td>=</td>
-            <td>460</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="my-table">
+        <div class="table-one">
+          <div class="table-item table-header">Вес</div>
+          <div class="table-item table-header">Стоимость за 1 кг</div>
+
+          <div class="table-item">Более 300</div>
+          <div class="table-item">1,90</div>
+
+          <div class="table-item">250 - 300</div>
+          <div class="table-item">2,00</div>
+
+          <div class="table-item">200 - 250</div>
+          <div class="table-item">2,10</div>
+
+          <div class="table-item">190 - 200</div>
+          <div class="table-item">2,20</div>
+
+          <div class="table-item">180 - 190</div>
+          <div class="table-item">2,30</div>
+
+          <div class="table-item">170 - 180</div>
+          <div class="table-item">2,40</div>
+
+          <div class="table-item">160 - 170</div>
+          <div class="table-item">2,50</div>
+
+          <div class="table-item">150 - 160</div>
+          <div class="table-item">2,60</div>
+
+          <div class="table-item">140 - 150</div>
+          <div class="table-item">2,70</div>
+
+          <div class="table-item">130 - 140</div>
+          <div class="table-item">2,80</div>
+
+          <div class="table-item">120 - 130</div>
+          <div class="table-item">3,00</div>
+
+          <div class="table-item">100 - 120</div>
+          <div class="table-item">3,20</div>
+        </div>
+
+        <table class="table-two ">
+			<div class="table-item">
+          <thead>
+            <tr>
+              <th c>Вес</th>
+              <th></th>
+              <th>Стоимость за 1 к</th>
+              <th></th>
+              <th>Оплата</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>120</td>
+              <td>*</td>
+              <td>3</td>
+              <td>=</td>
+              <td>460</td>
+            </tr>
+          </tbody>
+			 </div>
+        </table>
+      </div>
+    </section>
+
+    <section class="form container">
+      <form action="#" method="post">
+        <h2>Форма обраной связи</h2>
+
+        <div class="form">
+          <label for="name">Ваше имя</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Шамиль"
+            required
+          />
+        </div>
+
+        <div class="form">
+          <label for="address">Ваш город</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Хасавюрт"
+            required
+          />
+        </div>
+
+        <div class="form">
+          <label for="number">Ваш номер телефона</label>
+          <input
+            type="tel"
+            id="number"
+            name="number"
+            placeholder="+7 (999) 999-99-99"
+            required
+          />
+        </div>
+
+        <div class="form">
+          <laber for="subject">Тема обращения</laber>
+          <select name="subject" id="subject">
+            <option value="">Транспортировка груза</option>
+            <option value="">Перевод валюты</option>
+            <option value="">Другой вопрос</option>
+          </select>
+        </div>
+
+        <div class="form">
+          <label for="message">Сообщение</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Опишите ваш вопрос подробнее.."
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div class="form">
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree">Я согласен на обработку персональных данных</label>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn">Отправить сообщение</button>
+          <button type="reset" class="btn">Очистить форму</button>
+        </div>
+
+        <div class="form"></div>
+
+        <div class="form"></div>
+      </form>
     </section>
   </body>
 </html>
